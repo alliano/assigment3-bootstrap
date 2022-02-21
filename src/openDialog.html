@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>dialog</title>
+</head>
+<body class="bg-dark">
+    <div class="conten m-3">
+        <!-- Button trigger modal -->
+        <div class="btn bg-black w-100 p-3 rounded-3">
+            <button type="button" class="btn btn-dark rounded-3 border-light p-2 fs-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Open Modal
+            </button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-black border-secondary text-light">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title" id="staticBackdropLabel">Are you sure?</h5>
+                <button type="button" class="btn-close text-light text-center fs-5" style="line-height: 3px;" data-bs-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body">
+                <p class="fs-2">are you sure want to submit this album?</p>
+            </div>
+            <div class="modal-footer border-secondary">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Confirm</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </body>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
+    </html>
